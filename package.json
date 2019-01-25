@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yohanmarck/server.js#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bytes": "^3.0.0",
     "content-type": "^1.0.4",
     "debug": "^2.6.9",

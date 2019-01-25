@@ -1,12 +1,13 @@
 const express = require('express')
 const app = express()
+const bodyParser = require("body-parser")
 
 app.get('/hello', function (req, res) {
   res.send('Hello World!')
 })
 
 app.post('/chat', function (req, res) {
-  var msg = req
+  var msg = req.body
   if(msg === 'ville'){
   res.send('Nous sommes a Paris')
   }
