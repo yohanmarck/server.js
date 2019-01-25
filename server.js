@@ -5,10 +5,15 @@ app.get('/hello', function (req, res) {
   res.send('Hello World!')
 })
 
-app.get('/chat', function (req, res) {
-    res.send('Hello World!')
+app.post('/chat', function (req, res) {
+  if(req === 'ville'){
+  res.send('Nous sommes a Paris')
+  }
+  else if(req === 'météo'){
+    res.send('Il fait beau')
+  }
   })
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening on port 3000!')
 })
