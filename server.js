@@ -6,10 +6,11 @@ app.get('/hello', function (req, res) {
 })
 
 app.post('/chat', function (req, res) {
-  if(req === 'ville'){
+  var msg = req
+  if(msg === 'ville'){
   res.send('Nous sommes a Paris')
   }
-  else if(req === 'météo'){
+  else if(msg === 'météo'){
     res.send('Il fait beau')
   }
   })
