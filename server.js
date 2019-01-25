@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const bodyParser = require("body-parser")
 
+server.use(bodyParser.urlencoded({ extended: true }))
+
 app.get('/hello', function (req, res) {
   res.send('Hello World!')
 })
